@@ -1,0 +1,3 @@
+pathlib==1.0.1
+openpyxl==2.6.2
+pyinputplus==0.2.9
