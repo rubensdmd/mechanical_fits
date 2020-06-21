@@ -1,3 +1,3 @@
-# Calculadora de tolerancias mecánicas
+# Mechanidal fits calculator 
 
-Al programa se le entrega la medida nominal, la posición y el grado de la tolerancia como argumentos y te entrega la banda de tolerancia en micras.
+This project intends to be a quick reference for fits and limits in mechanical design. To do that, the module ´´´mechanicalFits.py´´´ provides a function called ´´´Tolerance´´´. This function returns a band of tolerance when given basic size, fundamental deviation, and international tolerance grade as arguments. 
