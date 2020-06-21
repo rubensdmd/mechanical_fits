@@ -181,6 +181,5 @@ def tolerance(diametro,pos,calidad):
         else:
             print('Banda de tolerancia:\n' + str(tolerancia + gradoTol) + '\n' + str(tolerancia))
 
-prueba = tolerance(50,'H','8')
 
 
