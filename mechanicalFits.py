@@ -11,7 +11,7 @@ def tolerance(diametro,pos,calidad):
     wb = openpyxl.load_workbook('Tolerancias.xlsx')
 
     # Ingresar diámetro nominal
-    if diametro < 0 or diametro >= 500:
+    if diametro < 0 or diametro > 500:
         return 'The basic size argument is out of range'
 
     # Ingresar posición:
