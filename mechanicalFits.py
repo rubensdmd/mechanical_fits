@@ -174,12 +174,17 @@ def tolerance(diametro,pos,calidad):
     JaZC = ['J', 'K', 'M', 'N', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'ZA', 'ZB', 'ZC']
 
     if pos in Ejes:
-        print('Banda de tolerancia:\n'+ str(tolerancia) + '\n' + str(tolerancia - gradoTol))
+        desvsup = str(tolerancia)
+        desvinf = str(tolerancia - gradoTol)
+        return desvsup, desvinf
     else:
         if pos in JaZC:
-            print('Banda de tolerancia:\n'+ str(tolerancia) + '\n' + str(tolerancia - gradoTol))
+            desvsup = str(tolerancia)
+            desvinf = str(tolerancia - gradoTol)
         else:
-            print('Banda de tolerancia:\n' + str(tolerancia + gradoTol) + '\n' + str(tolerancia))
+            desvsup = str(tolerancia + gradoTol)
+            desvinf = str(tolerancia)
+        return desvsup, desvinf
 
 
 
