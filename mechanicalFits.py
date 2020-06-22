@@ -172,7 +172,7 @@ def tolerance(diametro,pos,calidad):
             tolerancia = -int(tole[0]) + delta
 
     JaZC = ['J', 'K', 'M', 'N', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'ZA', 'ZB', 'ZC']
-    ajs = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'js']
+    ajs = ['a', 'b', 'c', 'cd','d', 'e', 'ef', 'f', 'fg', 'g', 'h', 'j', 'js']
 
     if pos in Ejes:
         if pos in ajs:
