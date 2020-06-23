@@ -155,8 +155,9 @@ def tolerance(diametro,pos,calidad):
         else:
             columna = get_column_letter(column_index_from_string(columna) + 1)  
 
-    if tolerancia == None:  # Ajuste para celdas combinadas
+    while tolerancia == None:  # Ajuste para celdas combinadas
         tolerancia = sheet[columna + str(int(fila)-1)].value
+        fila = str(int(fila)-1)
 
     PaZC = ['P', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'ZA', 'ZB', 'ZC']
 
@@ -192,4 +193,4 @@ def tolerance(diametro,pos,calidad):
         return desvsup, desvinf
 
 
-
+#print(tolerance(165,'J','8'))
